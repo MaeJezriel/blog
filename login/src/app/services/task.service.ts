@@ -14,7 +14,7 @@ export interface Task {
   providedIn: 'root'
 })
 export class TaskService {
-  private url = 'http://localhost/tictacdo/api/tasks';
+  private url = 'http://localhost/itelective4/itelective4-project/api/tasks';
   constructor(private http: HttpClient) { }
 
   getAll() {

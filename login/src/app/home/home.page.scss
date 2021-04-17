@@ -20,6 +20,9 @@
   column-gap: 5px;
 }
 
+.trash{
+  --color-activated:red;
+}
 
 ion-card {
   width: 100%;
@@ -29,6 +32,12 @@ ion-card {
 }
 
 
+ion-fab{
+  margin-top: 156%;
+  --color-hover:#47B3F3;
+  --color-focused:#47B3F3;
+  --background:#1da1f2;
+}
   //ion-content {
     //--offset-bottom: auto!important;
     //--overflow: hidden;

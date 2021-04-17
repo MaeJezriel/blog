@@ -6,9 +6,10 @@ ion-content {
 
 ion-slides {
     height: 80%;
-    --bullet-background-active: #fff;
+    --bullet-background-active: rgb(240, 239, 239);
     --bullet-background: #000;
 }
+
 
 .images{
     width: 80%;
@@ -17,12 +18,11 @@ ion-slides {
 .skipBtn{
     margin-left: 10px;
     margin-top: 25px;
-    font-family: 'montserrat';
+   
     display: inline-block;
 }
 
 .startBtn{
-    font-family: 'montserrat';
     display: block;
 }
 

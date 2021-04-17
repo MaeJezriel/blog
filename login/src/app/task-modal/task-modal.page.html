@@ -1,11 +1,7 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button color="danger" (click)="closeModal()">
-        close
-      </ion-button>
-    </ion-buttons>
-    <ion-title>{{isUpdate? 'Update' : 'Add'}} Task</ion-title>
+    <ion-icon  slot="start" name="arrow-back" (click)="closeModal()"></ion-icon>
+    <ion-title  style="text-align: center;">{{isUpdate? 'Edit' : 'Add'}} Note</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -24,7 +20,7 @@
       <ion-input [(ngModel)]="data.content" name="content"></ion-input>
     </ion-item>
     <ion-button 
-    fill="outline" 
+    fill="solid" 
     expand="block" 
     color="primary"
     class="ion-margin-top"

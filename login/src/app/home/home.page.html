@@ -11,26 +11,18 @@
 
 <ion-content>
   
-
+  <div id = "container">
   <ion-list *ngFor="let task of tasks">
-    <ion-item-sliding>
-    <ion-item>
-      <ion-label>
+      <ion-card>
+        <ion-card-content>
         <h1 class="title"> {{task.title}} </h1>
-        <h2 class = "substitle"> {{'substitle      :' + task.subtitle}}</h2>
+        <h2 class = "subtitle"> {{'substitle      :' + task.subtitle}}</h2>
         <h3 class = "content"> {{'content       :' + task.content}}</h3>
-      </ion-label>
-    </ion-item>
-    <ion-item-options side="end">
-    <ion-item-option color="danger" (click)="removeTask(task.id)">
-    <ion-icon name="trash"></ion-icon>
-    </ion-item-option>
-    <ion-item-option color="success" (click)="updateTask(task)">
-      <p>EDIT</p>
-      </ion-item-option>
-    
-
-    </ion-item-options>
-  </ion-item-sliding>
+        <ion-icon name="trash" (click)="removeTask(task.id)"> </ion-icon>
+        <ion-icon name="create-outline" (click)="updateTask(task)"> </ion-icon>
+      </ion-card-content>
+      </ion-card>
   </ion-list>
+</div>
+
 </ion-content>

@@ -1,14 +1,40 @@
-.subtitle, content {
-  font-size: 80%;
-  margin-top: 0;
-  color: #8b979f;
-}
-
 .title {
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 80%;
 }
 
-ion-content {
-  background:#ffffff;
-  }
+
+.subtitle {
+  font-size: 80%;
+ 
+}
+
+.content {
+  font-size: 80%;
+
+}
+ 
+
+#container {
+  padding: 5px;
+  columns: 2;
+  column-gap: 5px;
+}
+
+
+ion-card {
+  width: 100%;
+  margin: 0 0 10px 0;
+  break-inside: avoid;
+  background-color: whitesmoke;
+}
+
+
+  //ion-content {
+    //--offset-bottom: auto!important;
+    //--overflow: hidden;
+   // overflow: auto;
+    //&::-webkit-scrollbar {
+     // display: none;
+     // color: white;
+    //}
+    //}
